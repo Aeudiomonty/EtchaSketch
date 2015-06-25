@@ -6,6 +6,8 @@ var axisY = 0;
 	$("#start").click(function(){
 
 		$(this).toggle(100);
+		$("body").append("<button id='reset'>Reset</button>");
+
 
 		axisX = prompt("Number of squares on the X axis.");
 		axisY = prompt("Number of squares on the Y axis.");
@@ -38,7 +40,16 @@ var axisY = 0;
 
 
 
-			//Reset button.
+			
+
+
+
+			$("#reset").click(function(){
+
+				$("#start").toggle(100);
+				$("#reset").remove();
+				$("#mainDiv").remove();
+			});
 
 
 	});
