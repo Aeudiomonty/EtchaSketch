@@ -29,13 +29,21 @@ var axisY = 0;
 
 
 
+			$(".gridSquares").hover( function(){
+				
+				$(this).css("background-color", "black");
+				$(this).toggle();
+				
+			});
+
+
+
+			//Reset button.
+
+
 	});
 
-
-	//Change colour of the squares in the grid when hovered over.
-
-
-	//Reset button.
-
+	
+	
 
 });
