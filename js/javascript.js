@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
+var axisX = 0;
+var axisY = 0;
 
-	$("button").onclick(function(){
+	$("#start").click(function(){
 
-		//Use prompt to get number of squares on both axis.
+		axisX = prompt("Number of squares on the X axis.");
+		axisY = prompt("Number of squares on the Y axis.");
 
 		//Create grid.
 			//Create a main div.
